@@ -1,6 +1,3 @@
-Sure, I've replaced the LaTeX expressions with real formulas:
-
-```markdown
 # Linear Regression
 
 ## Table of Contents
@@ -28,9 +25,7 @@ Linear regression is a branch of regression analysis that focuses on modeling th
 ## Objective
 The aim of linear regression is to find a line that best fits the data, called the **Least Squares Line**, which minimizes the sum of the squared residuals (SSE). The equation for the line is:
 
-```
-y = b_0 + b_1 * x + ε
-```
+- *y = b_0 + b_1 * x + ε*
 
 Where:
 - **y** is the predicted value of **y**.
@@ -52,26 +47,36 @@ Where:
 - Mean of the x-variable and mean of the y-variable.
 - The best-fit line must always pass through this point.
 
-```
-sum(x) = 1 + 2 + 3 + 4 + 5 = 15
-sum(y) = 4 + 2 + 5 + 7 + 3 = 21
-```
+- [ sum(x)]/5 = 1 + 2 + 3 + 4 + 5 = 15/5
+- [ sum(y)]/5 = 4 + 2 + 5 + 7 + 3 = 21/5
 
-The centroid is **(3, 4.2)**.
+
+- For the above data centroid is **(3, 4.2)**.
 
 ### 2. Observed Value
 - It is calculated using the regression equation:
 
-```
-y = b_0 + b_1 * x + ε
-```
+- 𝑦_hat = b_0 + b_1 * x + ε
+- Sum of 𝑥𝑦 = (1 * 4) + (2 * 2) + (3 * 5) + (4 * 7) + (5 * 3) = 4 + 4 + 15 + 28 + 15 = 66
+- Sum of 𝑥^2 = 1^2 + 2^2 + 3^2 + 4^2 + 5^2 = 1 + 4 + 9 + 16 + 25 = 55
+- Slope (𝑏_1) = (5 * 66 - 15 * 21) / (5 * 55 - 15^2) = (330 - 315) / (275 - 225) = 15 / 50 = 0.3
+
+- Y-intercept (𝑏_0) = (21 - 0.3 * 15) / 5 = (21 - 4.5) / 5 = 16.5 / 5 = 3.3
+- y_hat= 3.3 + 0.3 * x
+| Independent (x) | Actual (y) | Predicted (\( \hat{y} \)) |
+|-----------------|------------|--------------------------|
+| 1               | 4          | 3.3 + 0.3(1) = 3.6        |
+| 2               | 2          | 3.3 + 0.3(2) = 3.9        |
+| 3               | 5          | 3.3 + 0.3(3) = 4.2        |
+| 4               | 7          | 3.3 + 0.3(4) = 4.5        |
+| 5               | 3          | 3.3 + 0.3(5) = 4.8        |
+
+
 
 ### 3. Residuals
 - Refer to the differences between the observed values of the dependent variable and the corresponding predicted values based on the linear regression model.
-
-```
-ε = y - y
-```
+- ε = y - y_hat
+- 
 
 ### 4. Error
 - Differences between the observed values of the dependent variable and the true (actual) values.
@@ -83,17 +88,8 @@ y = b_0 + b_1 * x + ε
 
 ```
 SSE = Σ ε^2
-```
-
-```
 SSE = (0.4)^2 + (-1.9)^2 + (0.8)^2 + (2.5)^2 + (-1.8)^2
-```
-
-```
 SSE = 0.16 + 3.61 + 0.64 + 6.25 + 3.24
-```
-
-```
 SSE = 13.9
 ```
 
@@ -102,25 +98,10 @@ SSE = 13.9
 
 ```
 y_bar = 21 / 5 = 4.2
-```
-
-```
 SST = Σ (y_i - y_bar)^2
-```
-
-```
 SST = (4 - 4.2)^2 + (2 - 4.2)^2 + (5 - 4.2)^2 + (7 - 4.2)^2 + (3 - 4.2)^2
-```
-
-```
 SST = (-0.2)^2 + (-2.2)^2 + (0.8)^2 + (2.8)^2 + (-1.2)^2
-```
-
-```
 SST = 0.04 + 4.84 + 0.64 + 7.84 + 1.44
-```
-
-```
 SST = 14.8
 ```
 
@@ -129,11 +110,6 @@ SST = 14.8
 - Calculates the average of the squares of the errors, or differences, between actual and predicted values in a regression problem.
 - A lower MSE indicates that the model's predictions are closer to the actual values, implying better performance.
 
-```
-MSE = SSE / n = 13.9 / 5 = 2.78
-```
+- MSE = SSE / n = 13.9 / 5 = 2.78
 
 ![Mean Squared Error](MSE.png)
-```
-
-This should make the mathematical parts clearer! Let me know if you need further adjustments!
