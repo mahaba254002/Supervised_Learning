@@ -12,6 +12,9 @@
   - [Sum of Squared Errors (SSE)](#5-sum-of-squared-errors-sse)
   - [Total Sum of Squares (SST)](#6-total-sum-of-squares-sst)
   - [Mean Squared Error (MSE)](#7-mean-squared-error-mse)
+  - [Correlation](#Correlation)
+  - [Coefficient of Determination](#Coefficient-of-Determination)
+  
 
 ## Introduction
 Linear regression is a branch of regression analysis that focuses on modeling the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data. It assumes there is a linear relationship between the variables.
@@ -65,9 +68,9 @@ Y-intercept (𝑏_0) = (21 - 0.3 * 15) / 5 = (21 - 4.5) / 5 = 16.5 / 5 = 3.3
 y_hat= 3.3 + 0.3 * x
 ```
 - Y intercept
-![y_intercept](intercept.png)
+![intercept](intercept.png)
 - slope
-![Slope](Slope.png)
+![slope](Slope.png)
  
 | Independent (x) | Actual (y) | Predicted (\( \hat{y} \)) |
 |-----------------|------------|--------------------------|
@@ -119,3 +122,28 @@ SST = 14.8
 - MSE = SSE / n = 13.9 / 5 = 2.78
 
 ![Mean Squared Error](MSE.png)
+
+## Correlation
+- measures the statistical relationship between two variables, indicating how changes in one variable are associated with changes in another. 
+- Positive Correlation: Both variables increase or decrease together.
+- Negative Correlation: One variable increases while the other decreases.
+- Ranges from -1 to 1. 
+- A correlation coefficient closer to 0 indicates there is no correlation.
+- A correlation coefficient closer to 1 indicates a strong positive correlation,
+meaning when one variable increases, the other proportionally increases. 
+- If it is closer to –1 then it indicates a strong negative correlation, which means
+as one variable increases the other proportionally decreases.
+![correlation](correlation.png)
+
+Coefficient of Determination
+![r*2](r_squared.png)
+- The coefficient of determination is the square of the Pearson correlation coefficient 𝑟.
+- It represents the proportion of the variance in the dependent variable that is predictable from the independent variable.
+- Essentially,indicates the strength of the relationship between the two variables.
+
+
+## Standard Error(Se)
+- The standard error of the estimate (SEE) measures the accuracy of predictions made by a regression line.
+- It gives an estimate of the standard deviation of the errors (residuals) in predicting the dependent variable.
+- The formula for the standard error of the estimate is:
+![Standard error](Se.png)
