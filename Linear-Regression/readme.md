@@ -65,9 +65,9 @@ Y-intercept (𝑏_0) = (21 - 0.3 * 15) / 5 = (21 - 4.5) / 5 = 16.5 / 5 = 3.3
 y_hat= 3.3 + 0.3 * x
 ```
 - Y intercept
-![y_intercept(b0)](intercept.png)
+![y_intercept](intercept.png)
 - slope
-![Slope(b1)](Slope.png)
+![Slope](Slope.png)
  
 | Independent (x) | Actual (y) | Predicted (\( \hat{y} \)) |
 |-----------------|------------|--------------------------|
