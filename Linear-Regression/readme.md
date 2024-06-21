@@ -64,7 +64,8 @@ Slope (𝑏_1) = (5 * 66 - 15 * 21) / (5 * 55 - 15^2) = (330 - 315) / (275 - 225
 Y-intercept (𝑏_0) = (21 - 0.3 * 15) / 5 = (21 - 4.5) / 5 = 16.5 / 5 = 3.3
 y_hat= 3.3 + 0.3 * x
 ```
-![alt text](image.png)
+- Y intercept
+![y_intercept(b0)](intercept.png)
 - slope
 ![Slope(b1)](Slope.png)
  
