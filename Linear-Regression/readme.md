@@ -68,9 +68,9 @@ Y-intercept (𝑏_0) = (21 - 0.3 * 15) / 5 = (21 - 4.5) / 5 = 16.5 / 5 = 3.3
 y_hat= 3.3 + 0.3 * x
 ```
 - Y intercept
-![intercept](intercept.png)
+![intercept](image-1.png)
 - slope
-![slope](Slope.png)
+![slope](image.png)
  
 | Independent (x) | Actual (y) | Predicted (\( \hat{y} \)) |
 |-----------------|------------|--------------------------|
@@ -121,7 +121,7 @@ SST = 14.8
 
 - MSE = SSE / n = 13.9 / 5 = 2.78
 
-![Mean Squared Error](MSE.png)
+- ![Mean Squared Error](MSE.png)
 
 ## Correlation
 - measures the statistical relationship between two variables, indicating how changes in one variable are associated with changes in another. 
@@ -133,17 +133,17 @@ SST = 14.8
 meaning when one variable increases, the other proportionally increases. 
 - If it is closer to –1 then it indicates a strong negative correlation, which means
 as one variable increases the other proportionally decreases.
-![correlation](correlation.png)
+- ![correlation](correlation.png)
 
 Coefficient of Determination
-![r*2](r_squared.png)
 - The coefficient of determination is the square of the Pearson correlation coefficient 𝑟.
 - It represents the proportion of the variance in the dependent variable that is predictable from the independent variable.
 - Essentially,indicates the strength of the relationship between the two variables.
+- ![r*2](r_squared.png)
 
 
 ## Standard Error(Se)
 - The standard error of the estimate (SEE) measures the accuracy of predictions made by a regression line.
 - It gives an estimate of the standard deviation of the errors (residuals) in predicting the dependent variable.
 - The formula for the standard error of the estimate is:
-![Standard error](Se.png)
+- ![Standard error](Se.png)
